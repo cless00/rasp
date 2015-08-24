@@ -6,8 +6,8 @@ int main(char args[]){
     char * filename = NULL;
     char * extension = NULL;
 
-    filename = strok(args, ".");
-    extension = strok(args, ".");
+    filename = strtok(args, ".");
+    extension = strtok(args, ".");
 
     sprintf(command, "gcc -o %s %s.%s -lwiringPi", filename, filename, extension);
 
