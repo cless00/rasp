@@ -9,6 +9,7 @@ int main(char args[]){
     filename = strtok(args, ".");
     extension = strtok(args, ".");
 
+    printf("command line : gcc -o %s %s.%s -lwiringPi", filename, filename, extension);
     sprintf(command, "gcc -o %s %s.%s -lwiringPi", filename, filename, extension);
 
     system(command);
