@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(char args[]){
-    char command[] = NULL;
+    char command[] = "";
     char * filename = NULL;
     char * extension = NULL;
 
